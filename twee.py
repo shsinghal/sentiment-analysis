@@ -12,10 +12,10 @@ class TwitterClient(object):
         ''' 
         Class constructor or initialization method. 
         '''
-        consumer_key = 'qJ14NxTNj8ndgFFaUc15UjMdY'
-        consumer_secret = 'hJYpqfMe7DtfOiINZ1km3feSzxXQcVB9NHojioJhSdKX5nwJGs'
-        access_token = '1046088765993701376-2YR1kOo1WxY05QmW49ZUXkQIndlrvy'
-        access_token_secret = 'zVWKo6NPDzeAaVgF6cYbTmm9DQzp4TyvbrlP48LS3VAti'
+        consumer_key = 
+        consumer_secret =
+        access_token = 
+        access_token_secret = 
   
         try: 
             self.auth = OAuthHandler(consumer_key, consumer_secret) 
@@ -25,10 +25,7 @@ class TwitterClient(object):
             print("Error: Authentication Failed") 
   
     def clean_tweet(self, tweet): 
-        ''' 
-        Utility function to clean tweet text by removing links, special characters 
-        using simple regex statements. 
-        '''
+      
         return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)", " ", tweet).split()) 
   
     def get_tweet_sentiment(self, tweet): 
